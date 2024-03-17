@@ -38,21 +38,10 @@ const AppComponent = () => {
    return(
      <div className='card'>
         <form className="form-card">
-          <h3>Form Card</h3>
-          <hr/>
           <div>
-             <label>student Name</label> <br/>       
-             <input type='text'  required id='name'/>       
+            <label>Restarent name</label><br/>
+            <input type='text'/>
           </div>
-          <div>
-             <label>student Group</label> <br/>       
-             <input type='text'  required id='group'/>       
-          </div>
-          <div>
-             <label>student Marks</label> <br/>       
-             <input type='Number'  required id='marks'/>       
-          </div>
-          <button type='button' onClick={getData}>Submit</button>
         </form>  
      </div>     
    )       

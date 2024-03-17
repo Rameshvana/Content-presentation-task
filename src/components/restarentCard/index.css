@@ -9,6 +9,7 @@
    display: flex;
    border:solid 1px yellow;
    width:52vw;
+   
    margin:20px;
    background-color: #fbfbfe;
    border-width:0px;
@@ -18,7 +19,12 @@
   color:#FF595E;
   font-weight: 600;
   font-size:19px;
-  font-family:Roboto, sans-serif;
+  font-family: serif;
+  line-height: 0px;
+  font: normal 20px serif;
+  line-height: 0px;
+  color:red;
+  
 }
 .content-box {
  padding-left: 10px;         
@@ -29,6 +35,8 @@
   font-style: italic;
   text-decoration: underline;
   cursor: pointer;
+  line-height: 0px;
+
 }
 strong{
  color: red;
@@ -48,8 +56,20 @@ strong{
 .btn {
   background-color: lightsalmon;
   padding: 10px;
+  width: 15vw;
   width:5vw;
   color:white;
   border-width:0px;
   border-radius: 6px;
+  cursor: pointer;
+
+}
+.location {
+  line-height: 0px;
+}
+.mo{
+  color: orange;
+  font-size: 23px;
+  line-height: 0px;
+
 }

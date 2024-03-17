@@ -19,8 +19,9 @@ function HomeComponent(){
       })
       .catch(() => {
          alert('Get data failed')
-      })   
-} 
+      })
+      document.getElementById('res').style.display = 'block';
+   }   
 
    useEffect(() => {
           
@@ -39,6 +40,7 @@ function HomeComponent(){
           </div>  
         </div>
         <div>
+         <h1 className='res'id='res'>Restaurants in Dubai</h1>
          <ul>
             {restarent.map((item ) => (
                <RestarentCard item={item}/>
