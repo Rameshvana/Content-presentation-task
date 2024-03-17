@@ -1,0 +1,42 @@
+.bg-card {
+  background-image: url(//sulcdn.azureedge.net/content/hp/bg/dance.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+.serch-input {
+  padding: 15px;
+  width:28vw;     
+  border-width: 0px;
+  font-size:15px; 
+  outline: none;  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:50px;
+}
+
+.serch-btn {
+background-color: #ff69b4;
+color: #ffffff;
+border: none;
+padding: 15px 20px;
+border-radius: 1px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+.serch-btn:hover {
+background-color: #ff4785;
+}
+.serch-card {
+  display: flex;
+  align-items: center; 
+ 
+} 
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}     
