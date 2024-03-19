@@ -25,7 +25,7 @@ const RestarentCard = (props) => {
         <div className='content-box'>
           <p className='name'>{restarent_name}</p>
         
-          <div className='an'><p className='review'>1130 reviews</p><strong>{available}</strong></div>
+          <div className='an'><p className='review'>1130 reviews</p><strong>Timings: {available}</strong></div>
 
           <hr/>
           <p><RiBubbleChartFill/>{description}<RiBubbleChartFill/></p>

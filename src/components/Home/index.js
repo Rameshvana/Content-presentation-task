@@ -13,10 +13,7 @@ function HomeComponent(){
    const navigate = useNavigate()
    
    console.log(restarent)
-   const gettheData = () => {
-      let inputValue = document.getElementById('userInput').value;
-      console.log(inputValue)
-       
+   const callThedata  = () => {
       getApiData()
       .then((res) => {
          alert('Get the data successfully')
@@ -27,6 +24,14 @@ function HomeComponent(){
       .catch(() => {
          alert('Get data failed')
       })
+   }
+
+   const gettheData = () => {
+      let inputValue = document.getElementById('userInput').value;
+      console.log(inputValue)
+       callThedata();
+       
+
    }   
 
    const getNavigate = () => {
@@ -42,9 +47,10 @@ function HomeComponent(){
       let id = (item._id)
       let del_Url = 'http://localhost:8000/delete-restarent/'+id
       
-      deleteItem(id)
+      deleteItem(null,id)
       .then(() => {
           alert('Data deleted.. ')
+          callThedata();
       })
       .catch(() => {
           alert('Data deleted failed..')

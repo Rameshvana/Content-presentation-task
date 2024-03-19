@@ -1,13 +1,19 @@
 import './index.css'
 import {gettheData, saveData} from '../../servises/context'
+import { useNavigate } from "react-router-dom";
+
+import { MdAddBusiness } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+
 
 
 const { useState } = require("react")
-let Rrl = "http://localhost:5000/data"
 let Url = "http://localhost:5000/add"
 
 const AppComponent = () => {
    const [data,setData] = useState([])
+  const navigate = useNavigate()
+
    const getData = () => {
       console.log('RAmesh')    
       let data = {
@@ -37,6 +43,7 @@ const AppComponent = () => {
     
       
    }
+
    const saveThedata = (event) => {
     event.preventDefault();
       let name = document.getElementById('name').value
@@ -60,10 +67,31 @@ const AppComponent = () => {
     })    
   }
 
+  const getNavigate = () => {
+    navigate("/")
+  }
+
+
+
 
 
    return(
-     <div className='card'>
+    <div>
+
+      <div className='bg-card'>
+        <div className='ab'>
+         <p className='heanding'>Find Dubai</p>
+          <p className='bis' onClick={getNavigate}> <CgProfile className='b-icon' onClick={() => navigate('/')}/> Profile </p>
+        </div>
+        <div className='card '>
+          <h2>Fast, FREE way to get experts.</h2>
+          <div className='serch-card'>
+            <input type="text" id="userInput" placeholder="Find your service here" className='serch-input'/>
+            <button type="serch" className='serch-btn'>GET EXPERTS</button>        
+          </div>
+        </div>  
+        </div>
+     <div className='card q'>
         <form className="form-card" onSubmit={saveThedata}>
           
             <label className='label'>Restarent name</label><br/>
@@ -91,13 +119,18 @@ const AppComponent = () => {
            </select>
           </div>
           <div>
+          <input type="file" accept="image/*"  />
+          </div>
+          <div>
             <button type='submit' className='sub-btn'>Submit</button>
             <button type='reset' className='clr-btn sub-btn'>Clear</button>
           </div>
    
         </form>  
+     </div>
      </div>     
    )       
 }
+
 
 export default AppComponent
