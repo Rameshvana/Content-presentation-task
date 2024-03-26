@@ -77,3 +77,35 @@ ul{
   font-size:19px;
   padding-right: 7px;
 }
+.filter-heading {
+  margin: 0;
+  font-family: 'Roboto';
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
+.prodect-input{
+    
+  border-bottom: 2px solid #1f91f3;
+  font-size:18px;
+  font-weight: 400;
+  padding-left:5px;
+   color: #555;
+  margin: 7px;
+  margin-bottom: 30px;
+  width:210px;
+  margin-left:20px;
+ outline: none;
+  padding: 5px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: transparent;
+    border: solid transparent;
+    border-width: var(--bs-border-width) 0;
+    border-bottom: 1px rgb(67, 11, 221) solid;
+    font-size: 15px;
+} 
+.filter-box {
+  margin:20px 0px 5px 30px;
+}
